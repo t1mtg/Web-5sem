@@ -19,7 +19,7 @@ body {
     right: 0;
     top:0;
     background: #D9EDEE;
-    
+
 }
 
 .header-content {
@@ -74,7 +74,7 @@ body {
 
 .header-content-profile__link:hover {
     color: #777;
-    
+
 }
 
 .main {
@@ -106,7 +106,7 @@ body {
 .main-deliveringTable td, th {
     padding: 8px 16px;
     white-space: nowrap;
-    
+
 }
 
 
@@ -158,7 +158,6 @@ body {
     }
 
     .header-content {
-        
         height: 64px;
         gap: 8px;
         flex-direction: column;
