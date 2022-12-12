@@ -1,76 +1,124 @@
-<!DOCTYPE html>
-<html lang="ru">
+    <!DOCTYPE html>
+    <html lang="ru">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Gurman Timofei" />
-        <meta name="keywords" content="Pochta 2.0" />
-        <meta name="description" content="Pochta 2.0 Gurman Timofei" />
-        <link rel="stylesheet" href="css/index.css" />
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Gurman Timofei"/>
+        <meta name="keywords" content="Pochta 2.0"/>
+        <meta name="description" content="Pochta 2.0 Gurman Timofei"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <script src="./js/countLoadTime.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>
         <title>Pochta 2.0</title>
     </head>
     <body>
-        <header class="header">
-            <nav class="header-content">
-                <h1 class="header-content__logo">Pochta 2.0</h1>
-                
-                <ul class="header-content-pages">
-                    <li class="header-content-pages__link"><a href="index.html">Посылки</a></li>
-                    <li class="header-content-pages__link"><a href="workers.html">Работники</a></li>
-                    <li class="header-content-pages__link"><a href="premises.html">Помещения</a></li>
-                </ul>
-                
-                <ul class="header-content-profile">
-                    <li class="header-content-profile__link">Профиль</li>
-                    <a href="login.html"><li class="header-content-profile__link">Выйти</li></a>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <h2 class="main__header">Посылки</h2>
-            <section class="main-deliveringTable">
-                <div class="main-deliveringTable__header">
-                    <h3 class="main-deliveringTable__title">В пути</h3>
-                    <button class="main-deliveringTable__addButton"><strong>+ Добавить</strong></button>
-                </div>
-                <table border="1">
-                    <tr>
-                        <th><i>Номер</i></th>
-                        <th><i>Отправитель</i></th>
-                        <th><i>Получатель</i></th>
-                        <th><i>Адрес отправки</i></th>
-                        <th><i>Адрес получения</i></th>
-                        <th><i>Стоимость, р</i></th>
-                    </tr>
-                    <tr><td>22813370404</td><td>Гурман Т.В.</td><td>Иванов С.А.</td><td>Ломоносова, 9</td><td>Вяземский пер. 5/7</td><td>599</td></tr>
-                    <tr><td>22813370403</td><td>Иванов А.А.</td><td>Иванов С.А.</td><td>Кронверкский пр. 49</td><td>Салова, 2</td><td>590</td></tr>
-                    <tr><td>22813370402</td><td>Сергеев А.Д.</td><td>Козлов А.М.</td><td>Арцеуловская аллея, 13</td><td>Вяземский пер. 5/7</td><td>520</td></tr>
-                </table>
-            </section>
-            <section class="main-deliveringTable">
-                <div class="main-deliveringTable__header">
-                    <h3 class="main-deliveringTable__title">В пути</h3>
-                </div>
-               <table border="1">
-                   <tr>
-                       <th><s>Номер</s></th>
-                       <th><s>Отправитель</s></th>
-                       <th><u>Получатель</u></th>
-                       <th><u>Адрес отправки</u></th>
-                       <th><u>Адрес получения</u></th>
-                       <th><u>Стоимость, р</u></th>
-                   </tr>
-                   <tr><td>22813370411</td><td>Гурман Т.В.</td><td>Мухин А.И.</td><td>Ломоносова, 9</td><td>Вяземский пер. 5/7</td><td>200</td></tr>
-                   <tr><td>22813370412</td><td>Петров С.А.</td><td>Зинченко С.В.</td><td>Московский пр., 9</td><td>Ленинский пр., 22</td><td>300</td></tr>
-                   <tr><td>22813370413</td><td>Гурман Т.В.</td><td>Кобаченко А.А.</td><td>Ломоносова, 9</td><td>Садовая, 38</td><td>400</td></tr>
-               </table>
-            </section>
-        </main>
+    <header class="header">
+        <nav class="header-content">
+            <h1 class="header-content__logo">Pochta 2.0</h1>
 
-        <footer class="footer">
-            <q class="footer__blockquote">Кто познал жизнь, тот никуда не спешит.
-            </q>            
-        </footer>
+            <ul class="header-content-pages">
+                <li class="header-content-pages__link"><a href="index.html">Посылки</a></li>
+                <li class="header-content-pages__link"><a href="workers.html">Работники</a></li>
+                <li class="header-content-pages__link"><a href="premises.html">Помещения</a></li>
+            </ul>
+
+            <ul class="header-content-profile">
+                <li class="header-content-profile__link">Профиль</li>
+                <a href="login.html">
+                    <li class="header-content-profile__link">Выйти</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2 class="main__header">Посылки</h2>
+        <section class="main-deliveringTable">
+            <div class="main-deliveringTable__header">
+                <h3 class="main-deliveringTable__title">В пути</h3>
+                <button class="main-deliveringTable__addButton"><strong>+ Добавить</strong></button>
+            </div>
+            <table border="1">
+                <tr>
+                    <th><i>Номер</i></th>
+                    <th><i>Отправитель</i></th>
+                    <th><i>Получатель</i></th>
+                    <th><i>Адрес отправки</i></th>
+                    <th><i>Адрес получения</i></th>
+                    <th><i>Стоимость, р</i></th>
+                </tr>
+                <tr>
+                    <td>22813370404</td>
+                    <td>Гурман Т.В.</td>
+                    <td>Иванов С.А.</td>
+                    <td>Ломоносова, 9</td>
+                    <td>Вяземский пер. 5/7</td>
+                    <td>599</td>
+                </tr>
+                <tr>
+                    <td>22813370403</td>
+                    <td>Иванов А.А.</td>
+                    <td>Иванов С.А.</td>
+                    <td>Кронверкский пр. 49</td>
+                    <td>Салова, 2</td>
+                    <td>590</td>
+                </tr>
+                <tr>
+                    <td>22813370402</td>
+                    <td>Сергеев А.Д.</td>
+                    <td>Козлов А.М.</td>
+                    <td>Арцеуловская аллея, 13</td>
+                    <td>Вяземский пер. 5/7</td>
+                    <td>520</td>
+                </tr>
+            </table>
+        </section>
+        <section class="main-deliveringTable">
+            <div class="main-deliveringTable__header">
+                <h3 class="main-deliveringTable__title">В пути</h3>
+            </div>
+            <table border="1">
+                <tr>
+                    <th><s>Номер</s></th>
+                    <th><s>Отправитель</s></th>
+                    <th><u>Получатель</u></th>
+                    <th><u>Адрес отправки</u></th>
+                    <th><u>Адрес получения</u></th>
+                    <th><u>Стоимость, р</u></th>
+                </tr>
+                <tr>
+                    <td>22813370411</td>
+                    <td>Гурман Т.В.</td>
+                    <td>Мухин А.И.</td>
+                    <td>Ломоносова, 9</td>
+                    <td>Вяземский пер. 5/7</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>22813370412</td>
+                    <td>Петров С.А.</td>
+                    <td>Зинченко С.В.</td>
+                    <td>Московский пр., 9</td>
+                    <td>Ленинский пр., 22</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>22813370413</td>
+                    <td>Гурман Т.В.</td>
+                    <td>Кобаченко А.А.</td>
+                    <td>Ломоносова, 9</td>
+                    <td>Садовая, 38</td>
+                    <td>400</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <q class="footer__blockquote">Кто познал жизнь, тот никуда не спешит.
+        </q>
+    </footer>
     </body>
-</html>
+    </html>

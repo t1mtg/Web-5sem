@@ -5,11 +5,13 @@
     text-decoration: none;
     border: 0;
     color: #000;
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
 }
 
 body {
     background: #F9F9F9;
-    font-family: 'Montserrat', Times, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -150,6 +152,15 @@ body {
     padding: 16px;
     text-decoration: underline;
     text-transform: uppercase;
+    text-indent: 10px;
+}
+
+.header-content-pages__link--active {
+    text-decoration: underline;
+}
+
+.header-content-pages__link a:hover {
+    color: blueviolet;
 }
 
 @media screen and (max-width: 1024px){
