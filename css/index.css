@@ -133,6 +133,9 @@ body {
 }
 
 .main-deliveringTable__addButton {
+    position: absolute;
+    right: 0;
+    top: 0;
     padding: 6px 12px;
     background: #D9EDEE;
     border-radius: 6px;
