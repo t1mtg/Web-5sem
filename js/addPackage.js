@@ -8,6 +8,7 @@ const table = document.querySelector('.table');
 const modal = document.querySelector('.add-modal');
 const form = document.querySelector('.add-form');
 const addButton = document.querySelector('.main-deliveringTable__addButton');
+const closeModalButton = document.querySelector('.add-form__addBtn');
 
 const packages = JSON.parse(localStorage.getItem('packages')) || [];
 
@@ -28,6 +29,11 @@ packages.forEach((package) => {
 
 addButton.addEventListener('click', () => {
     modal.style.display = 'flex';
+});
+
+closeModalButton.addEventListener('click', () => {
+    if (senderAddress.value !== '' || accepterAddress.value !== '')
+        modal.style.display = 'none';
 });
 
 form.addEventListener('submit', (event) => {
@@ -65,4 +71,10 @@ form.addEventListener('submit', (event) => {
     accepterAddress.value = '';
     price.value = '';
     modal.style.display = 'none';
+});
+
+modal.addEventListener('click', (event) => {
+    if (!form.contains(event.target)) {
+        modal.style.display = 'none';
+    }
 });

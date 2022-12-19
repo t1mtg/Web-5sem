@@ -22,12 +22,13 @@
                 <p>Получатель</p>
                 <input type="text" class="add-form__input add-form__accepter">
                 <p>Адрес отправителя</p>
-                <input type="text" class="add-form__input add-form__senderAddress">
+                <input type="text" class="add-form__input add-form__senderAddress" name="senderAddress" required placeholder="Адрес отправителя">
                 <p>Адрес получателя</p>
-                <input type="text" class="add-form__input add-form__accepterAddress">
+                <input type="text" class="add-form__input add-form__accepterAddress" name="accepterAddress" required placeholder="Адрес получателя">
                 <p>Цена</p>
                 <input type="text" class="add-form__input add-form__price">
-                <button class="add-form__addBtn">Add</button>
+                <input class="add-form__addBtn" type="submit" value="Add">
+                <button type="reset" class="add-form__resetBtn" style="padding: 8px 0;">Reset</button>
             </form>
         </div>
     <header class="header">
