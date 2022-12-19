@@ -1,0 +1,38 @@
+.main__map {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.main-groups {
+    max-width: 992px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-groups-group-list__header {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.main-groups-group-list__item {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 1280px){
+    .main__map {
+        display: none;
+    }
+
+    .main-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
