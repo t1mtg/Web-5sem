@@ -15,6 +15,21 @@
         <title>Pochta 2.0</title>
     </head>
     <body>
+        <div class="add-modal">
+            <form class="add-form">
+                <p>Отправитель</p>
+                <input type="text" class="add-form__input add-form__sender">
+                <p>Получатель</p>
+                <input type="text" class="add-form__input add-form__accepter">
+                <p>Адрес отправителя</p>
+                <input type="text" class="add-form__input add-form__senderAddress">
+                <p>Адрес получателя</p>
+                <input type="text" class="add-form__input add-form__accepterAddress">
+                <p>Цена</p>
+                <input type="text" class="add-form__input add-form__price">
+                <button class="add-form__addBtn">Add</button>
+            </form>
+        </div>
     <header class="header">
         <nav class="header-content">
             <h1 class="header-content__logo">Pochta 2.0</h1>
@@ -79,6 +94,7 @@
         </q>
         <span class="pageLoadTime"></span>
     </footer>
+    <script src="./js/addPackage.js"></script>
     <script src="./js/underlineMenuItem.js"></script>
     </body>
     </html>
