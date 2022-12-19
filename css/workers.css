@@ -42,6 +42,14 @@
     height: 204px;
 }
 
+.main-groups-group__error {
+    color: red;
+    font-size: 54px;
+    line-height: 72px;
+    font-weight: bold;
+    display: none;
+}
+
 @media screen and (max-width: 1280px){
     .main-groups-group-list {
         gap: 24px;
